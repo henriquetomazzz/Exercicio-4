@@ -5,10 +5,11 @@ ou diga se eles são iguais.
 num1 = float(input("Digite um valor: "))
 num2 = float(input("Digite outro valor: "))
 
-maximo = [num1, num2]
+if num1 > num2:
+  print(num1)
 
-if num1 > num2 or num1 < num2:
-  print(max(maximo))
-else: 
-  if num1 == num2:
-    print(num1)
+elif num1 < num2:
+  print(num2)
+
+else:
+  print(num1)
